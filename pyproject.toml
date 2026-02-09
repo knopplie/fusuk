@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fusuk"
+version = "0.1.1"
+description = "Generate fake US and UK names using real data"
+readme = "README.md"
+authors = [
+    {name = "Knopplie Lastname", email = "knopplielastname@gmail.com"}
+]
+license = {text = "MIT"}
+keywords = ["fake", "names", "generator", "us", "uk", "testing"]
+classifiers = [
+    # Development status
+    "Development Status :: 4 - Beta",
+    
+    # Intended audience
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    
+    # License
+    "License :: OSI Approved :: MIT License",
+    
+    # Python versions
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "requests>=2.28.0",
+]
+
+[project.scripts]
+fusuk = "fusuk.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/knopplie/fusuk"
+Repository = "https://github.com/knopplie/fusuk"
+Issues = "https://github.com/knopplie/fusuk/issues"
+"Bug Tracker" = "https://github.com/knopplie/fusuk/issues"
+
+[tool.setuptools.package-data]
+fusuk = ["data/*.json", "data/*.txt"]
+

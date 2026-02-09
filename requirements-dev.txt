@@ -1,0 +1,13 @@
+pytest>=7.0.0
+pytest-cov>=4.0.0 # testing
+
+black>=23.0.0
+flake8>=6.0.0
+isort>=5.12.0 # formatting
+
+mypy>=1.0.0 # typechecking
+
+build>=0.10.0
+twine>=4.0.0 # for dist
+
+requests>=2.28.0  # to fetch data from github
